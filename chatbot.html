@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Kanishka AI</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANISHKA AI | Master Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<body class="chat-body">
 
-<body>
+    <div class="chat-interface">
+        <nav class="chat-nav">
+            <div class="bot-identity">
+                <div class="bot-avatar">K</div>
+                <div>
+                    <h3>KANISHKA AI</h3>
+                    <small>Online | Ready to build</small>
+                </div>
+            </div>
+            <a href="index.html" class="exit-btn"><i class="fas fa-times"></i></a>
+        </nav>
 
-<div class="chat-container">
-    <h2>Kanishka AI 🤖</h2>
+        <div id="chat-display" class="chat-display">
+            <div class="bubble bot">Hi, I'm Kanishka! Welcome to the Master Hub. What are we building or solving today? 🚀</div>
+        </div>
 
-    <div id="chat-box"></div>
+        <div id="loading" class="loading-animation">Kanishka is thinking...</div>
 
-    <input type="text" id="user-input" placeholder="Ask Kanishka...">
-    <button onclick="sendMessage()">Send</button>
-</div>
+        <div class="chat-input-area">
+            <input type="text" id="user-query" placeholder="Ask me something, bro..." autocomplete="off">
+            <button id="send-query"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
